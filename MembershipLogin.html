@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--This is the tailwind framework insertion line-->
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--Upto this point-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>UniSave Sacco</title>
 </head>
 <body>
-    <header>
-       
-        <nav>
-            <h1>UniSave Sacco</h1>
+    <header class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+       <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600" data-page="home">UniSave Sacco</h1>
+            <nav class="flex space-x-6">
+               
 
-            <ul>
-               <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products & Services</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">News & Events</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <ul>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="home">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="about">About Us</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="products">Products & Services</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="membership">Membership</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="new">News & Events</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="faqs">FAQs</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition" data-page="contact">Contact Us</a></li>
 
-                <li>
-                    <button>
-                        Member Login
-                    </button>
-                </li>
-            
-            </ul>
-            
-        </nav>
+                    <li href="#" class="text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md font-medium transition" data-page="login">
+                        <a>
+                            Member Login
+                        </a>
+                    </li>
+                
+                </ul>
+                
+            </nav>
+        </div>
     </header>
 
     <section id="membership-txt">
