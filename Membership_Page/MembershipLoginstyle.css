@@ -37,7 +37,13 @@ header h1{
   position: relative;
   top: -20px;
   margin-top: 0px;
+
   
+}
+
+button:hover{
+
+  cursor: pointer;
 }
 /*The Code Above is used to style the navigation bar.*/
 #membership-txt{
@@ -236,17 +242,26 @@ input[type="submit"]:active {
 
 }
 
-.signup-link a{
-
-  color: #5046E6;
-  cursor: pointer;
-
-}
 .signup-link{
 
   position:relative;
   top:-30px;
 }
+.signup-link a{
+
+  color: #5046E6;
+ 
+
+}
+.signup-link a:hover{
+
+  cursor: pointer;
+
+}
+/*Hover is not working yet will check on it later*/
+/*The above section is used to style the login form in the form section*/
+
+
 
 
 
