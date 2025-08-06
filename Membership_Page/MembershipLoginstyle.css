@@ -3,6 +3,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/*This is the part you should copy for navigation in all pages*/
 nav ul{
 
   justify-content: space-around;
@@ -45,6 +47,7 @@ button:hover{
 
   cursor: pointer;
 }
+/*Upto this part*/
 /*The Code Above is used to style the navigation bar.*/
 #membership-txt{
 
@@ -261,6 +264,8 @@ input[type="submit"]:active {
 /*Hover is not working yet will check on it later*/
 /*The above section is used to style the login form in the form section*/
 
+
+/*Also copy this part for all pages as the footer*/
 footer{
 
   background-color: #1F2937;
@@ -382,6 +387,7 @@ footer{
   text-align: center;
   margin: 0;
 }
+/*Upto this part
 /*The above section is used to style the footer of the page*/
 
 
