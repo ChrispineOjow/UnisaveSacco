@@ -261,6 +261,76 @@ input[type="submit"]:active {
 /*Hover is not working yet will check on it later*/
 /*The above section is used to style the login form in the form section*/
 
+footer{
+
+  background-color: #1F2937;
+  padding:20px;
+  height: 300px;
+  
+}
+
+.footer-container{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 80%;
+}
+
+.unisave-text{
+
+  float: left;
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+
+}
+
+.unisave-text h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.quick-links{
+
+  
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+  margin:0;
+}
+.quick-links h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.quicklinks ul li{
+
+  list-style: none;
+  margin:5px 0;
+}
+
+.contact-info{
+
+  float: left;
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+}
+.contact-info h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
 
 
 
