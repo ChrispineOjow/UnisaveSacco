@@ -1,0 +1,269 @@
+body {
+ font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #F9FAFB;
+}
+
+/*This is the part you should copy for navigation in all pages*/
+nav ul{
+
+  justify-content: space-around;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+}
+
+nav ul li{
+
+  justify-content: space-around;
+  margin: 15px;
+  position: relative;
+  top: -10px;
+}
+
+header{
+
+  height: 70px;
+}
+
+header h1{
+
+  position: relative;
+  left: -50px;
+  top: -20px;
+}
+
+.membership-btn{
+  position: relative;
+  top: -20px;
+  margin-top: 0px;
+
+  
+}
+
+button:hover{
+
+  cursor: pointer;
+}
+/*Upto this part*/
+/*The Code Above is used to style the navigation bar.*/
+
+#Welcome-section{
+
+  background-color: #F9FAFB;
+  height: 500px;
+  display: flex;
+  padding: 0px 70px;
+  flex-wrap: wrap;
+ 
+
+}
+.welcome-text h2{
+
+  font-size: 30px;
+  font-weight:bold;
+  margin: 30px 0;
+
+
+}
+
+.welcome-text p{
+
+  font-size: 18px;
+  color: #374151;
+  margin: 20px 0;
+  
+}
+
+.welcome-extra-text{
+
+  background-color: #5046E6;
+  height: 300px;
+  color: #FFFFFF;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: #374151 0px 0px 5px;
+
+}
+
+.welcome-extra-text h1{
+
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.welcome-extra-text p{
+
+  font-size: 20px;
+  margin: 10px 0;
+  color: #E0E7FF;
+}
+
+.welcome-extra-text input[type="submit"]{
+
+  border-radius:25px;
+  margin-left: 30px;
+  width: 15%;
+  height:40px;
+  font-size: 16px;
+  margin-top: 20px;
+  
+}
+
+
+.join-btn{
+
+  background-color:#22C55F;
+
+}
+
+.member-login-btn{
+  background-color: #FFFFFF;
+  color: #5046E6;
+}
+
+#about{
+
+  margin: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Also copy this part for all pages as the footer*/
+footer{
+
+  background-color: #1F2937;
+  padding:20px;
+  height: 300px;
+  
+}
+
+.footer-container{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 80%;
+}
+
+.unisave-text{
+
+  float: left;
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+
+}
+
+.unisave-text h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.quick-links{
+
+  
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+  margin:0;
+}
+.quick-links h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.quicklinks ul li{
+
+  list-style: none;
+  margin:5px 0;
+}
+
+.contact-info{
+
+  float: left;
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+}
+.contact-info h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.connect{
+
+
+ 
+  color:#9CA3AF;
+  font-size: 14px;
+
+}
+
+.connect div ul {
+
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+
+}
+
+.connect div ul li {
+
+  list-style: none;
+  margin: 0 10px;
+  color:#9CA3AF;
+}
+
+.connect h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+}
+
+.footer-bottom hr{
+
+  color: #374151;
+  border: 0.5px solid #374151;
+  margin: 20px 0;
+}
+
+.footer-bottom p{
+
+  color:#9CA3AF;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+/*Upto this part
+/*The above section is used to style the footer of the page*/
