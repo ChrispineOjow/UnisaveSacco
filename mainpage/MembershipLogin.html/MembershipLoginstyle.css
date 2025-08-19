@@ -1,0 +1,384 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*The above section is the body reset*/
+
+.nav-container{
+
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    background-color: white;
+  
+
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important; /* if there's an outline */
+}
+
+
+
+
+header{
+
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.logo h1{
+
+    padding-left:0px ;
+    margin-left:0px ;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4F46E5;
+    float: left;
+
+}
+
+.membership-btn{
+
+    background-color:#4F46E5;
+    color: white;
+    height: 80%; 
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+
+a{
+
+    text-decoration: none;
+    color: black;
+}
+
+.membership-btn a{
+
+    color:white;
+    text-decoration: none;
+}
+
+.membership-btn:hover,
+.membership-btn a:hover{
+
+    background-color:#4039d2;
+    color: white;
+    border: none;
+}
+
+/*The Above Section Is the nav */
+
+/*The Foooter section starts here*/
+#footer{
+
+
+  background-color: #1F2937;
+  padding:20px;
+  height:40vh;
+  
+  
+}
+
+.footer-container{
+
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  flex-direction: row;
+  height: 80%;
+}
+
+.unisave-text{
+
+  float: left;
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+
+}
+
+.unisave-text h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.quick-links{
+
+  
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+  margin:0;
+}
+.quick-links h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.quicklinks ul li{
+
+  list-style: none;
+  margin:5px 0;
+}
+
+
+.contact-info{
+
+  float: left;
+  width: 360px;
+  color:#9CA3AF;
+  font-size: 14px;
+}
+.contact-info h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.connect{
+
+
+ 
+  color:#9CA3AF;
+  font-size: 14px;
+
+}
+
+.connect div ul {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  font-size: 20px;;
+
+}
+
+.connect div ul li {
+
+  list-style: none;
+  margin: 0 10px;
+  color:#9CA3AF;
+}
+
+.connect h3{
+
+  color:#ffff;
+  font-size:20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+}
+
+.footer-bottom hr{
+
+  color: #374151;
+  border: 0.5px solid #374151;
+  margin: 20px 0;
+}
+
+.footer-bottom p{
+
+  color:#9CA3AF;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+/*The Footer section ends here*/
+
+/*This is the body section*/
+#membership-section{
+
+  background-color:#F9FAFB;
+  height:98vh;
+  padding: 40px;
+ 
+
+}
+.center-membership{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190vh;
+
+ 
+
+}
+
+#membership-txt{
+
+ display: flex;
+ border-radius: 20px;
+ background-color: #FFFFFF;
+ width:70%;
+}
+
+.text-section{
+
+  width:50%;
+  background-color:#4F46E5;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px;
+}
+
+form{
+  padding: 20px;
+  background-color:#FFFFFF;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.password-label{
+
+  width:60vh;
+  margin-bottom: 0px;
+ 
+  
+}
+
+.password-label a{
+
+  float: right;
+}
+
+.password-section{
+
+  width:60vh;
+
+  margin-top: 0px;
+}
+
+.email-section{
+  width:60vh;
+ 
+}
+
+input[type=text],
+input[type=password] {
+
+  width: 100%;
+  border-radius: 5px;
+  border:1px solid #D1D5DB; /* Gray border */
+}
+
+input[type=submit]{
+
+  width: 100%;
+  background-color: #4F46E5;
+  color: white;
+  border: 1px solid #4F46E5;
+  border-radius: 5px;
+}
+
+
+.line-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.line-container::before,
+.line-container::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid black;
+  margin: 0 10px;
+}
+
+.line-text {
+  white-space: nowrap;
+}
+
+.brand-btns{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+ 
+  
+}
+
+.google-btn,
+.apple-btn{
+
+  margin: 10px;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+}
+
+.signup-link{
+
+  text-align: center;
+  margin-top: 20px;
+}
+
