@@ -16,7 +16,7 @@
     <!--Copy the header part for all the navigation pages in the website-->
     <header class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-indigo-600" data-page="home" >UniSave Sacco</h1>
+            <h1 class="text-2xl font-bold text-indigo-700" data-page="home">UniSave Sacco</h1>
             <nav class="flex space-x-6">
                
 
@@ -43,19 +43,15 @@
     </header>
     <!--End of the header part-->
 
-        <section id ="Welcome-section">
+        <section id ="Home" class="page-section active">
 
-            <div>
-                <div class="welcome-text">
-                    <h2>Welcome to UniSave Sacco</h2>
-                    <p>This section serves as the main entry point to the UniSave Sacco website, providing a concise overview of our mission, key offerings, and recent updates. It's designed to give visitors a quick snapshot of what we stand for and how we can support their financial journey.</p>
-                </div>
-                <div class="welcome-extra-text">
-                    <h1>Empowering Your Financial Journey</h1>
-                    <p>Dedicated to fostering financial growth and community well-being for university students.</p>
-                    <div>
-                        <input type="submit" value="Join Us Today" class="join-btn">
-                        <input type="submit" value="Member Login" class="member-login-btn">
+            <div class="hero-gradient text-white rounded-3xl p-10 mb-12 shadow-xl flex flex-col items-center text-center transform -rotate-1 skew-y-1 scale-105 transition-all duration-500 ease-in-out">
+                <div class="transform rotate-1 skew-y-0 scale-95">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight tracking-tight">Empowering Your Financial Journey🚀</h1>
+                    <p class="text-xl sm:text-2xl text-indigo-100 mb-8 max-w-3xl">Dedicated to fostering financial growth and community well-being for university students.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105" data-page="membershipLogin.html"class="join-btn">Join Us Today!</a>
+                        <a href="#" class="bg-white text-indigo-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105" data-page="products"class="products-services-btn">Explore Our Products</a>
                     </div>
                 </div>
             </div>
@@ -63,37 +59,37 @@
         </section>
 
         <section id="about">
-            <div>
-                <h1>About UniSave Sacco</h1>
+            <div class="bg-blue-50 rounded-xl p-8 mb-12 shadow-md border-l-4 border-blue-500">
+                <h1 class="text-2xl font-bold text-gray-900 mb-4">About UniSave Sacco-Your Partner in Growth📈</h1>
                 <p>
                     UniSave Sacco is a leading financial cooperative committed to empowering university students with accessible and affordable financial solutions. 
                     We believe in building a strong financial foundation for your future, offering a range of savings, loan, and investment products tailored to your academic and personal growth.
                 </p>
-                <a href="#">Learn More About Us →</a>
+                <a href="#"class="text-blue-700 hover:text-blue-800 font-semibold mt-4 inline-block" data-page="about">Learn More About Us →</a>
             </div>
 
         </section>
 
-        <section id="services">
-
-            <div class="students-loans">
-                <p>💰</p>
-                <h2>Student Loans</h2>
+        <section id="Unlock Your Potential with Our Services!">
+          <div  class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl p-6 shadow-xl text-center border-b-4 border-green-500 transform hover:-translate-y-2 transition-transform duration-300">
+                <p>📚</p>
+                <h2>Smart Student Loans</h2>
                 <p>Flexible loans designed to support your academic journey and personal needs.</p>
-                <a href="#">Explore Loans →</a>
+                <a href="#"data-page>Explore Loans →</a>
             </div>
 
-            <div class="savings-accounts">
+            <div class="bg-white rounded-xl p-6 shadow-xl text-center border-b-4 border-yellow-500 transform hover:-translate-y-2 transition-transform duration-300">
 
                 <p>📈</p>
-                <h2>Savings Accounts</h2>
+                <h2>High-Yield Savings Accounts</h2>
                 <p>Grow your money with competitive interest rates and easy access.</p>
                 <a href="#">View Savings →</a>
 
 
             </div>
 
-            <div class="investment-opportunities">
+            <div class="bg-white rounded-xl p-6 shadow-xl text-center border-b-4 border-blue-500 transform hover:-translate-y-2 transition-transform duration-300">
 
                 <p>💼</p>
                 <h2>Investment Opportunities</h2>
@@ -101,7 +97,7 @@
                 <a href="#">Invest Now →</a>
 
             </div>
-
+         </section>
 
         </section>
 
@@ -119,32 +115,46 @@
 
         <section id="what-members-say">
 
-            <div>
-                <h1>What Our Members Say</h1>
-                <div>
-                    <p>"UniSave Sacco made getting my education loan so easy. Their team was incredibly supportive, and the rates were unbeatable for a student!"</p>
-                    <h3>- Jane M., Computer Science Student</h3>
+            <div class="bg-purple-50 rounded-xl p-8 mb-12 shadow-md border-r-4 border-purple-500">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Hear From Our Thriving Members!</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-purple-200">
+                    <p class="text-gray-700 italic mb-4 text-lg">"UniSave Sacco made getting my education loan so easy. Their team was incredibly supportive, and the rates were unbeatable for a student!"</p>
+                    <p class="text-gray-900 font-semibold text-right">- Jane M., Computer Science Student</p>
                 </div>
-                <div>
-                    <p>"I started my savings account with UniSave in my first year. Now, I'm well on my way to funding my postgraduate studies. Highly recommend!"</p>
-                    <a>- David K., Business Administration</a>
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-purple-200">
+                    <p class="text-gray-700 italic mb-4 text-lg">"I started my savings account with UniSave in my first year. Now, I'm well on my way to funding my postgraduate studies. Highly recommend!"</p>
+                    <p class="text-gray-900 font-semibold text-right">- David K., Business Administration</p>
+                </div>
                 </div>
             </div>
 
         </section>
 
         <section>
-            <div>
-                <h1>Quick Links</h1>
-                <div>
-                    <ul>
-                        <li><a href="#">Apply for a Loan</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Open a Savings Account</a></li>
-                        <li><a href="#">Our Governance</a></li>
-                        <li><a href="#">Financial Calculators</a></li>
-                        <li><a href="#">Member Resources</a></li>
-                    </ul>
+            <div class="bg-blue-50 rounded-xl p-8 shadow-md">
+                <h2>Quick Links</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                
+                        <a href="#">
+                           <span class="text-x1">💰</span> <span>Apply for a Loan</span>
+                        </a>
+                        <a href="#">
+                            <span class="text-x1">📞</span> <span> Contact Us</span>
+                        </a>
+                        <a href="#">
+                            <span class= "text-x1">💸</span> <span>Open a Savings Account</span>
+                        </a>
+                        <a href="#">
+                            <span class="text-x1">🏢</span> <span>Our Governance</span>
+                        </a>
+                        <a href="#">
+                            <span class="text-x1">📊</span> <span>Financial Calculators</span>
+                        </a>
+                        <a href="#">
+                            <span class="text-x1">🤝</span> <span>Member Resources</span>
+                        </a>
+                
                 </div>
             </div>
         </section>
