@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="signupstyle.css">
+    <title>UniSave Sacco</title>
+</head>
+<body>
+<header class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold text-indigo-600" data-page="home">UniSave Sacco</a>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="about">About Us</a></li>
+        <li><a href="#" data-page="products">Products & Services</a></li>
+        <li><a href="#" data-page="membership">Membership</a></li>
+        <li><a href="#" data-page="news">News & Events</a></li>
+        <li><a href="#" data-page="faqs">FAQs</a></li>
+        <li><a href="#" data-page="contact">Contact Us</a></li>
+        <li><a href="../mainpage/MembershipLogin/MembersipLogin.html" class="btn-login" data-page="login">Member Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+   
+    <!-- Signup Page Section -->
+<section id="signup" class="signup-section">
+  <h2 class="section-title">Join UniSave Sacco</h2>
+  <p class="section-subtitle">
+    This page is where new members can sign up for UniSave Sacco. It's designed
+    to be a quick and easy process to get you started on your financial journey
+    with us.
+  </p>
+
+  <div class="signup-box">
+    <h3 class="form-title">Create Your Account</h3>
+    <form class="signup-form">
+      <div class="form-group">
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="signup-email">Email Address</label>
+        <input type="email" id="signup-email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required>
+        <p class="hint">
+          Minimum 8 characters, including uppercase, lowercase, number, and
+          symbol.
+        </p>
+      </div>
+
+      <button type="submit" class="btn-success">Sign Up</button>
+    </form>
+
+    <p class="footer-text">
+      Already have an account?
+      <a href="../mainpage/MembershipLogin/MembersipLogin.html" data-page="login">Log In</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>
+        We provide top-notch services to help you grow your business
+        and reach new heights.
+      </p>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: info@example.com</p>
+      <p>Phone: +254 712 345 678</p>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 UniSave Sacco. All rights reserved.</p>
+  </div>
+</footer>
+
