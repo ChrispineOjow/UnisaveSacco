@@ -1,0 +1,58 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 10vh;
+}
+
+#admin-section {
+
+    background-color: grey;
+    border-radius: 20px;
+
+   
+}
+
+#admin-txt{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 78vw;
+    height: 78vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.text-section{
+
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+.quote{
+    position: relative;
+    top:30vh;
+}
+
+.header-text p,
+.quote p:nth-child(2){
+
+    color: #BFDBFE;
+}
+
+form {
+
+    background-color:#FFFFFF;
+    padding:10px 20px 0px 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+ 
+}
+

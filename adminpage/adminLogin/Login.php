@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!--If styling doesn't work download bootstrap locally yet to find a solution when i find one will update-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+   
+    <title>UnisaveAdmin</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <section id="admin-section">
+            
+            <div  id="admin-txt">
+
+                <div class="text-section">
+
+                    <div class="header-text">
+                        <h1>UniSave Sacco</h1>
+                        <p>Admin Portal</p>
+                    </div>
+                    <img> <!--Place a logo in this section-->
+                    <div class="quote">
+                        <p>"Securely manage UniSave Sacco operations and empower our members' financial growth."</p>
+                        <p>- The UniSave Team</p>
+                    </div>
+                </div>
+
+                <form method="get" action="" >
+                    <div class="welcome-message">
+                        <h1>Admin Login</h1>
+                        <p>Please enter your admin credentials to access the management portal.</p>
+                    </div>
+
+                    <div class="email-section">
+                        <label>Email</label>
+                        <br>
+                        <input style="width: 30vw;" type="email" id="email" name="email" required>
+                    </div>
+
+                    <br><br>
+
+                    <div class="password-section">
+                    
+                        <label>Password</label>
+                        <input style="width: 30vw;" type="password" id="password" name="password" required>
+                        <br><br>
+                    </div>
+
+                    <div class="login-button">
+                        <input style="width: 30vw;" type="submit" id="Login-btn" name="LogIn" value=" Log in as Admin ">
+                    </div>
+
+                    <div class="Forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    
+                    
+                </form>            
+                
+
+            </div>
+       
+            
+    
+        </section>
+
+    </div>
+</body>
+</html>
