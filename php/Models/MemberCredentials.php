@@ -7,7 +7,7 @@
         function checkCredentials($MemberId, $Email){
 
             $sql = "CALL `checkCredentials`({$MemberId},'{$Email}')";
-            $this->getData($sql)->rowCount();
+            return $this->getData($sql)->rowCount();
 
         }
 
