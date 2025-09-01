@@ -32,20 +32,36 @@ $(document).ready(function(){
 
                 if(isJSON(data)){
 
-                    data = JSON.parse(data)
+                    data =JSON.parse(data)
 
                     if(data.status == "success"){
 
-                        
-                        window.location.href='../mainpage/MembershipLogin/MembershipLogin.html'
+                        if(email.val() === "" &&(name.val() === "" && password.val() === "")){
+
+                            errorMessage.html(`<div class="alert alert-danger " role="alert"> Please fill in the fields </div>`)
+
+                        }else{
+
+                         document.getElementsByClassName("signup-form").reset()
+                        }
                     }
                     else if(data.status == "exists"){
 
-                        errorMessage.html("<div class='alert alert-success' role='alert' >Email Already Exists Login .</div>")
-                        email.val("")
-                        name.val("")
-                        password.val("")
-                        name.focus()
+                        if(email.val() === "" &&(name.val() === "" && password.val() === "")){
+
+                            errorMessage.html(`<div> Please fill in the fields </div>`)
+
+                        }else{
+
+                         
+                        
+                            errorMessage.html(`<div style="color:red">${data.message} .</div>`)
+                            email.val("")
+                            name.val("")
+                            password.val("")
+                            name.focus()
+
+                        }
                     }
                     else{
 

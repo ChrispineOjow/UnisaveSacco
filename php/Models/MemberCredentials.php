@@ -15,7 +15,7 @@
 
             if($this->checkCredentials($MemberId, $Email)){
 
-                return ["status"=>"exists","message"=>"The Account Entered Already Exists"];
+                return ["status"=>"exists","message"=>"The Email Entered Already Exists"];
 
             }else{
 
