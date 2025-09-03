@@ -1,0 +1,50 @@
+body{
+    background-color: #F0F8FF;
+}
+#main{
+    margin-left: 0;
+}
+
+#nav{
+    background-color: #FFFF;
+}
+
+#section{
+
+    margin-left: 10px;
+}
+
+#message{
+    
+    background-color: #FFFF;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#savingsbalance-section{
+
+    margin-right: 20px;
+    padding: 13px;
+    background-color: #DCFCE7;
+    text-align: center;
+}
+#section h4{
+
+    font-size: 19px;
+}
+
+#loanbalance-section{
+
+    margin-left:20px;
+    padding: 10px;
+    background-color: #FEE2E2;
+    text-align: center;
+}
+
+#sharecapital-section{
+
+    margin-left: 30px;
+    padding: 14px;
+    background-color: #DBEAFE;
+    text-align: center;
+}

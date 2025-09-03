@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/MemberDashboard.css">
+    <title>Member Dashboard</title>
+</head>
+<body class="m-4">
+    <div>
+        <h2>Member Dashboard</h2>
+        <p>
+            Welcome to your personalized UniSave Sacco member portal! Here, 
+            you can get a quick overview of your accounts, 
+            access recent activities, and perform common tasks.
+        </p>
+    </div>
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-md-2 me-3 nav nav-link border p-2 rounded-3 shadow-sm"  id="nav">
+                <h2>Your Portal</h2>
+                <ul>
+                    <li><a href="">Dashboard Home</a></li>
+                    <li><a href="">My Accounts (Savings & Deposits)</a></li>
+                    <li><a href="">My Loans</a></li>
+                    <li><a href="">Share Capital</a></li>
+                    <li><a href="">Online Loan Application</a></li>
+                    <li><a href="">Online Deposit/Witrdrawal Requests</a></li>
+                    <li><a href="">Profile Management</a></li>
+                    <li><a href="">Messages & Notifications</a></li>
+                    <li><a href="">Online Forms & Requests</a></li>
+                    <li><a href="">Log Out</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 container-fluid" id="section">
+                <div id="message" class="container shadow-sm rounded-3 border" >
+                    <h2>Welcome, John Doe</h2>
+                    <p>Here is a quick summary of your Unisave Sacco accounts.</p>
+                </div>
+
+                <div class="row container">
+                    <div class="col-md-3 shadow rounded-3 border" id="savingsbalance-section">
+                        <h4>Savings Balance</h4>
+                        <h3 id="savings-balance" style="color: #15803D;">KES 15,450.00</h3>
+                    </div>
+
+                    <div class="col-md-4  rounded-3 border" id="loanbalance-section">
+
+                        <h4>Loan Balance</h4>
+                        <h3 id="loan-balance" style="color: #B91C1C;">KES 25,000.00</h3>
+
+                    </div>
+
+                    <div class="col-md-3 rounded-3 border" id="sharecapital-section" >
+
+                        <h4>Share Capital</h4>
+                        <h3 id="sharecapital" style="color: #1D4ED8;">KES 7,500.00</h3>
+
+                    </div>
+                </div>
+
+                <div class="mt-3 container">
+                    <h2>Recent Transactions</h3>
+                    <table class="table">
+                        <thead class="table-light" >
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Descritpion</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Balance</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="container mt-3">
+                    <button class="col-md-3 btn btn-primary m-3">Apply Loan</button>
+                    <button class="col-md-3 btn btn-primary m-3">View Statement</button>
+                    <button class="col-md-3 btn btn-primary m-3">Make Deposit</button>
+                    <button class="col-md-3 btn btn-primary m-3">Update Profile</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+    <script src="../../JS/bootstrap.min.js"></script>
+</body>
+</html>
