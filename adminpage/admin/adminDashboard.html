@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/adminDashboard.css">
+    <title>Admin Dashboard</title>
+</head>
+<body class="m-4">
+    <div>
+        <h2>Admin Dashboard</h2>
+        <p>
+           Welcome, Admin User! Here you can manage all aspects of UniSave Sacco operations.
+        </p>
+    </div>
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-md-2 me-3 nav nav-link border p-2 rounded-3 shadow-sm"  id="nav">
+                <h5>Admin Functions</h5>
+                <ul>
+                    <li><a href="">Dashboard Home</a></li>
+                    <li><a href=""> Member Management</a></li>
+                    <li><a href="">Loan Approvals</a></li>
+                    <li><a href="">Deposit/Withdrawal Management</a></li>
+                    <li><a href="">Reports & Analytics</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Log Out</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 container-fluid" id="section">
+                <div id="message" class="container shadow-sm rounded-3 border mb-4 p-4" >
+                    <h2>Overview</h2>
+                    <p>A snapshot of UniSave Sacco's key operational metrics.</p>
+                </div>
+
+                <div class="row container">
+                    <div class="col-md-3 shadow-sm rounded-3 border m-4" id="savingsbalance-section">
+                        <h4>Total Members</h4>
+                        <h3 id="total-members" style="color: #15803D;">1,250</h3>
+                    </div>
+
+                    <div class="col-md-3  rounded-3 border m-4" id="loanbalance-section">
+
+                        <h4>Total Savings</h4>
+                        <h3 id="total-savings " style="color: #B91C1C;">KES 12.5M</h3>
+
+                    </div>
+
+                    <div class="col-md-3 rounded-3 border m-4 p-2" id="sharecapital-section" >
+
+                        <h4>Total Loans Out</h4>
+                        <h3 id="total-loans-out" style="color: #1D4ED8;">KES 8.2M</h3>
+
+                    </div>
+
+                    <div class="col-md-3  rounded-3 border m-4 p-2" id="loanbalance-section">
+
+                        <h4>New Loans App(Today)</h4>
+                        <h3 id="loan-application" style="color: #B91C1C;">15</h3>
+
+                    </div>
+
+                    <div class="col-md-3  rounded-3 border m4 p-2" id="loanbalance-section">
+
+                        <h4>Pending Withdrawals</h4>
+                        <h3 id="pending-withdrawals" style="color: #B91C1C;">8</h3>
+
+                    </div>
+
+                    <div class="col-md-3  rounded-3 border m-4 p-2" id="loanbalance-section">
+
+                        <h4>Active Staff</h4>
+                        <h3 id="active-staff" style="color: #B91C1C;">12</h3>
+
+                    </div>
+                </div>
+
+                <div class="mt-4 border rounded-3 shadow-sm container p-4">
+                    <h2>Recent Admin Actions</h3>
+                    <table class="table">
+                        <thead class="table-light" >
+                            <tr>
+                                <th scope="col">TIME</th>
+                                <th scope="col">ACTION</th>
+                                <th scope="col">DETAILS</th>
+                                <th scope="col">ADMIN USER</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="">View all logs &rarr;</a>
+                </div>
+
+                <div class="container mt-4">
+                    <h2>Member Managment</h2>
+                    <p>View, search, add, or edit member details and manage their accounts.</p>
+                </div>
+                <div class="container mt-3 border rounded-3 shadow-sm p-4">
+                    <h3>All Members List</h3>
+                    <input type="text" name="" id="" placeholder="Search member by name or ID..." class="col-md-12">
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>MEMBER ID</th>
+                                <th>NAME</th>
+                                <th>PHONE</th>
+                                <th>STATUS</th>
+                                <th>ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="">Edit</a>|<a href="">Deactivate</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="">Edit</a>|<a href="">Deactivate</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="container mt-5 rounded-3 border shadow-sm p-4">
+                    <form>
+                        <h4>Add New Member</h4>
+                        <label class="mt-4 mb-2">Full Name</label>
+                        <input type="text" name="" id="" class="col-md-12">
+                        
+                        <br>
+                        <label class="mt-4 mb-2">Email</label>
+                        <input type="email" name="" id="" class="col-md-12">
+
+                        <br>
+                        <label class="mt-4 mb-2">Phone Number</label>
+                        <input type="text" name="" id="" class="col-md-12">
+                        <br>
+                        <button type="submit" class="btn btn-primary mt-4 mb-2">Add Member</button>
+                    </form>
+                </div>
+
+
+                <div class="container mt-4">
+                    <div>
+                        <h3>Loan Approvals</h3>
+                        <p>Review and approve or reject pending loan applications.</p>
+                    </div>
+
+                    <div class="container mb-4 rounded-3 border shadow-sm p-4">
+                        <h4>Pending Loan Aplications</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>APP ID</th>
+                                    <th>MEMBER</th>
+                                    <th>LOAN TYPE</th>
+                                    <th>AMOUNT</th>
+                                    <th>DATE</th>
+                                    <th>ACTIONS</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="">Approve</a>|<a href="">Reject</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="">Approve</a>|<a href="">Reject</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="container mt-4">
+                        <div>
+                            <h3>Deposit/Withdrawal Management</h3>
+                            <p>Process pending member deposit and withdrawal requests.</p>
+                        </div>
+
+                        <div class="container rounded-3 border shadow-sm mb-4 p-4">
+                            <h4>Pending Requests</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Req ID</th>
+                                        <th>MEMBER</th>
+                                        <th>TYPE</th>
+                                        <th>AMOUNT</th>
+                                        <th>DATE</th>
+                                        <th>ACTIONS</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="">Process</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="">Process</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="container mt-4">
+                <h3>Reports & Analytics</h3>
+                <p>Access various reports and insights into Sacco operations and financial performance.</p>
+
+                <div class="container shadow-sm rounded border mt-4 p-4">
+                    <h4>Available Reports</h4>
+
+                    <div class="container mt-3 mb-3 border rounded-3 shadow-sm p-3">
+                        <h4>Member Growth Report</h4>
+                        <p>Overview of new member registrations over time.</p>
+                        <a href="">Generate Report →</a>
+                    </div>
+
+                    <div class="container mt-3 mb-3 shadow-sm border rounded-3 p-3">
+                        <h4>Loan Performance Report</h4>
+                        <p>Analysis of loan disbursement, repayment rates, and outstanding balances.</p>
+                        <a href="">Generate Report →</a>
+                    </div>
+
+                    <div class="container mt-3 mb-3 shadow-sm border rounded-3 p-3">
+                        <h4>Transaction Volume Report</h4>
+                        <p>Summary of daily, weekly, or monthly deposit and withdrawal volumes.</p>
+                        <a href="">Generate Report →</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container mt-4">
+                <h3>Admin Settings</h3>
+                <p>Manage system configurations, user roles, and security settings.</p>
+
+                <div class="col-md-8 container border rounded-3 shadow-sm p-4 mt-5">
+                    <form>
+                        <h3>General Settings</h3>
+                        <div>
+                            <label>Sacco Name </label>
+                            <input type="text" value="UnisaveSacco" class="col-md-11 mt-2 mb-3">
+                            <br>
+                            <label>Default Loan Interest Rate (%)</label>
+                            <input type="number" step="0.01" value="1.0" class="col-md-11 mt-2 mb-3">
+                            <br>
+                            <button class="btn btn-primary">Save General Settings</button>
+                        </div>
+                        <hr>
+                        <h3>User Role Managment</h3>
+                        <div class="col-md-11 row">
+                            <p class="col-md-8">Admin_John (Full Accces)</p>
+                            <a href="" class="col-md-3">Edit Roles</a>
+                        </div>
+                        <div class="col-md-11 row">
+                            <p class="col-md-8">Admin_Jane (Loan Approvals)</p>
+                            <a href="" class="col-md-3">Edit Roles</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Add New Admin User</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+    <script src="../../JS/bootstrap.min.js"></script>
+</body>
+</html>
