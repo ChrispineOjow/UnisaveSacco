@@ -1,93 +1,44 @@
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".signup-form");
+    const errorMessage = document.getElementById("errormessage");
 
-    const signUpButton = $("#SignUp"),
-        memberId = $("#memberId"),
-        email = $("#Email"),
-        name = $("#Name"),
-        password = $("#Password"),
-        errorMessage = $("#errormessage")
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
 
-    
-    signUpButton.on("click", function(e){
+            const name = document.getElementById("Name").value.trim();
+            const email = document.getElementById("Email").value.trim();
+            const password = document.getElementById("Password").value.trim();
 
-        e.preventDefault();
-
-        const memberid = memberId.val(),
-            Email = email.val(),
-            Name = name.val(),
-            Password = password.val()
-
-        $.post(
-            "../php/Controllers/SignUp.php",
-            {
-                SignUp:true,
-                MemberId:memberid,
-                Email,
-                Name,
-                Password
-                
-            },
-
-            function(data){
-
-                if(isJSON(data)){
-
-                    data =JSON.parse(data)
-
-                    if(data.status == "success"){
-
-                        if(email.val() === "" &&(name.val() === "" && password.val() === "")){
-
-                            errorMessage.html(`<div class="alert alert-danger " role="alert"> Please fill in the fields </div>`)
-
-                        }else{
-
-                         document.getElementsByClassName("signup-form").reset()
-                        }
-                    }
-                    else if(data.status == "exists"){
-
-                        if(email.val() === "" &&(name.val() === "" && password.val() === "")){
-
-                            errorMessage.html(`<div> Please fill in the fields </div>`)
-
-                        }else{
-
-                         
-                        
-                            errorMessage.html(`<div style="color:red">${data.message} .</div>`)
-                            email.val("")
-                            name.val("")
-                            password.val("")
-                            name.focus()
-
-                        }
-                    }
-                    else{
-
-                        errorMessage.html(`<div class='alert alert-success' role='alert' > An error occured ${data.message}</div>`)
-                        
-                    }
-                }else{
-                    errorMessage.html(`<div class='alert alert-danger' role='alert'>Invalid server response.</div>`);
-                }
-
+            if (!name || !email || !password) {
+                errorMessage.innerHTML = `<div class="alert alert-danger" role="alert">Please fill in all fields.</div>`;
+                return;
             }
 
-        )
-    })
+            const formData = new FormData();
+            formData.append("Name", name);
+            formData.append("Email", email);
+            formData.append("Password", password);
 
-
-    function isJSON(str){
-        try{
-
-            return(JSON.parse(str) && !!str)
-
-        } catch (e){
-
-            return false
-
-        }
+            fetch("../php/Models/MemberCredentials.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    errorMessage.innerHTML = `<div class="alert alert-success" role="alert">${data.message}</div>`;
+                    form.reset();
+                    setTimeout(() => {
+                        window.location.href = "../mainpage/MembershipLogin/MembershipLogin.html";
+                    }, 1500); // Redirect after 1.5 seconds
+                } else {
+                    errorMessage.innerHTML = `<div class="alert alert-danger" role="alert">${data.message}</div>`;
+                }
+            })
+            .catch(() => {
+                errorMessage.innerHTML = `<div class="alert alert-danger" role="alert">An error occurred. Please try again.</div>`;
+            });
+        });
     }
-
-})
+});
