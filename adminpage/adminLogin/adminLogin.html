@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <form method="get" action="" >
+                <form method="post"  id="loginForm">
                     <div class="welcome-message">
                         <h1>Admin Login</h1>
                         <p>Please enter your admin credentials to access the management portal.</p>
@@ -62,9 +62,12 @@
                     <div class="Forgot-password">
                         <a href="#">Forgot password?</a>
                     </div>
+
+                    <div id="responseMessage" class="alert alert-danger" style="color: black; display: none;"></div>
                     
                     
-                </form>            
+                </form>   
+                
                 
 
             </div>
@@ -74,5 +77,7 @@
         </section>
 
     </div>
+
+    <script src="../../JS/adminLogin.js"></script>
 </body>
 </html>
