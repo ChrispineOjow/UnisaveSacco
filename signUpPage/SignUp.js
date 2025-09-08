@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             formData.append("Email", email);
             formData.append("Password", password);
 
-            fetch("../php/Models/MemberCredentials.php", {
+            fetch("#phpfile", {
                 method: "POST",
                 body: formData
             })
