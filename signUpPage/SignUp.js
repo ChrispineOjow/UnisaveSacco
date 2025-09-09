@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             formData.append("Email", email);
             formData.append("Password", password);
 
-            fetch(/*"#phpfile",*/ {
+            fetch("signup.php", {
                 method: "POST",
                 body: formData
             })
