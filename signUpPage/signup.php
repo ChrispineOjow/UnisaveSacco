@@ -6,7 +6,7 @@ header("Content-Type:application/json");
 $host="localhost";
 $user = "root";
 $pass = "";  //default password is empty but key in password if you have one
-$db = "Unisavedb";
+$db = "unisavesacco";
 $conn = new mysqli ($host,$user,$pass,$db);
 
 //this stops if the connection fails
